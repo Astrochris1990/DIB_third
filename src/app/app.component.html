@@ -1,0 +1,15 @@
+<header>
+  <h1>Deine Daten aus der Supabase Tabelle</h1>
+</header>
+
+<div class="content">
+  <div *ngFor="let item of supabaseData">
+    {{ item.Speisen }} - {{ item.Anzahl }}
+  </div>
+  
+  <div *ngIf="supabaseData.length === 0">
+    No data available.
+  </div>
+  
+</div>
+
